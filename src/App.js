@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { msalConfig } from './authConfig';
 import { theme } from './theme';
-import './App.css';
+import './App.css'; //.
 
 // Components
 import Header from './components/Header';
