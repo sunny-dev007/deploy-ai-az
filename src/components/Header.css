@@ -1,0 +1,228 @@
+/* Material UI Header Customizations - White Theme */
+.nav-item-material {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-material:hover {
+  transform: translateX(4px);
+}
+
+/* Custom animations for navigation items */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-item-material {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-item-material {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Custom scrollbar for mobile drawer */
+.MuiDrawer-paper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.MuiDrawer-paper::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.MuiDrawer-paper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  /* border-radius: 3px; */
+}
+
+.MuiDrawer-paper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth transitions for all interactive elements */
+.MuiButton-root,
+.MuiIconButton-root,
+.MuiListItemButton-root {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom focus styles for accessibility */
+.MuiButton-root:focus-visible,
+.MuiIconButton-root:focus-visible,
+.MuiListItemButton-root:focus-visible {
+  outline: 2px solid #94a3b8;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Enhanced hover effects */
+.MuiButton-root:hover {
+  transform: translateY(-1px);
+}
+
+.MuiIconButton-root:hover {
+  transform: scale(1.05);
+  background-color: #f8fafc;
+}
+
+/* Custom chip styling */
+.MuiChip-root {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 16px;
+}
+
+/* Avatar customizations */
+.MuiAvatar-root {
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.MuiAvatar-root:hover {
+  border-color: #94a3b8;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu customizations */
+.MuiMenu-paper {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  border: 1px solid #e2e8f0;
+}
+
+/* Toolbar customizations */
+.MuiToolbar-root {
+  min-height: 72px !important;
+  padding: 0 24px !important;
+}
+
+/* AppBar styling for white theme */
+.MuiAppBar-root {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Typography enhancements */
+.MuiTypography-h6 {
+  text-shadow: none;
+  letter-spacing: -0.025em;
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  .MuiTypography-h6 {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Custom divider styling */
+.MuiDivider-root {
+  margin: 0.5rem 0;
+  opacity: 0.6;
+  border-color: #e2e8f0;
+}
+
+/* List item enhancements */
+.MuiListItemIcon-root {
+  transition: all 0.3s ease;
+}
+
+.MuiListItemButton-root:hover .MuiListItemIcon-root {
+  transform: scale(1.1);
+}
+
+/* Custom badge styling */
+.MuiBadge-badge {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Enhanced focus management */
+.MuiDrawer-root:focus-within {
+  outline: none;
+}
+
+/* Custom loading states */
+.MuiButton-root.Mui-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Button hover effects */
+.MuiButton-outlined:hover {
+  border-width: 2px;
+}
+
+/* Mobile drawer styling */
+.MuiDrawer-paper {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Navigation button active states */
+.MuiButton-root.Mui-selected {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+/* Smooth icon transitions */
+.MuiSvgIcon-root {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced button shadows */
+.MuiButton-root:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom focus ring */
+.MuiButton-root:focus-visible::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #94a3b8;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .nav-item-material,
+  .MuiButton-root,
+  .MuiIconButton-root,
+  .MuiListItemButton-root,
+  .MuiAvatar-root,
+  .MuiAppBar-root {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  .MuiAppBar-root {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    border-bottom-color: #475569;
+  }
+  
+  .MuiDrawer-paper {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-right-color: #475569;
+  }
+} 

@@ -1,0 +1,73 @@
+/* Panel Header Styles */
+.panel-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+}
+
+.panel-header h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.panel-header p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Panel Content Styles */
+.panel-content {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.content-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: #6c757d;
+}
+
+.content-placeholder svg {
+    margin-bottom: 16px;
+    color: #adb5bd;
+}
+
+.content-placeholder h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.content-placeholder p {
+    margin: 0;
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+/* Smooth scrolling for panel content */
+.panel-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.panel-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.panel-content::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
