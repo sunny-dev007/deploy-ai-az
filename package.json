@@ -45,6 +45,11 @@
     "deploy": "gh-pages -d build",
     "setup-db": "node backend/scripts/setup-db.js"
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(axios|framer-motion|react-markdown|remark-gfm|@azure)/)"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
