@@ -19,10 +19,10 @@ This repository contains the NIT AI Document Assistant, a full-stack application
 
 #### 🔧 Dev Branch
 - **Purpose**: Local development and feature integration
-- **Deployment**: Manual deployment for testing
+- **Deployment**: Manual deployment for development
 - **Workflow**: 
   - All feature development occurs here
-  - Code review and testing before merging to main
+  - Code review before merging to main
   - Safe environment for experimentation
 
 #### 🚀 Main Branch
@@ -54,7 +54,7 @@ This repository contains the NIT AI Document Assistant, a full-stack application
 
 ### Pipeline Stages
 1. **Build**: Compile and bundle application
-2. **Test**: Run automated tests
+
 3. **Deploy**: Deploy to Azure WebApp
 
 ## 🛠️ Development Setup
@@ -96,7 +96,7 @@ nit-ai-document-assistant/
 
 ### Development to Production
 1. **Development**: Work on `dev` branch
-2. **Testing**: Thoroughly test features locally
+2. **Development**: Thoroughly develop and review features locally
 3. **Code Review**: Create pull request from `dev` to `main`
 4. **Merge**: Approve and merge to `main`
 5. **Auto-Deploy**: Pipeline automatically triggers and deploys to WebApp

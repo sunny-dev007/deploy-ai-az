@@ -29,7 +29,7 @@
 - [🎯 Usage](#usage)
 - [🔧 Development](#development)
 - [📱 API Documentation](#api-documentation)
-- [🧪 Testing](#testing)
+
 - [🚢 Deployment](#deployment)
 - [🤝 Contributing](#contributing)
 - [📄 License](#license)
@@ -291,7 +291,7 @@ nitor-customer-portal/
 # Frontend development
 npm start              # Start development server
 npm run build         # Build for production
-npm test              # Run tests
+
 npm run eject         # Eject from Create React App
 
 # Backend development
@@ -338,27 +338,6 @@ When in static mode, all endpoints return predefined data without database calls
 
 ---
 
-## 🧪 Testing
-
-### **Frontend Testing**
-```bash
-npm test                    # Run all tests
-npm test -- --coverage    # Run with coverage report
-```
-
-### **Backend Testing**
-```bash
-cd backend
-npm test                   # Run backend tests
-```
-
-### **Testing Strategy**
-- 🧪 Unit tests for components
-- 🔗 Integration tests for API endpoints
-- 🎭 E2E tests for user workflows
-- 📊 Performance testing for analytics
-
----
 
 ## 🚢 Deployment
 

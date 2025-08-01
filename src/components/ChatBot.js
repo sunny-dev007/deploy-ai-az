@@ -173,34 +173,7 @@ const ChatBot = () => {
         }
     };
 
-    // Remove test messages after initial render
-    useEffect(() => {
-        // Don't clear the Docker example for now
-        
-        // Test our JSON response handling logic
-        const testResponseHandling = () => {
-            console.log("Testing JSON response handling...");
-            
-            // Test case that mimics the response format in the screenshot
-            const testCase = {
-                output: "PHP (Hypertext Preprocessor) is a server-side scripting language embedded in HTML, primarily used for creating dynamic web content. It enables web developers to build web-based software applications that can interact with databases, manage dynamic content, and provide session tracking."
-            };
-            
-            // Process the test case using our extraction logic
-            let result = '';
-            if (typeof testCase === 'object' && Object.keys(testCase).length === 1 && 'output' in testCase) {
-                const outputContent = testCase.output;
-                if (typeof outputContent === 'string') {
-                    result = outputContent;
-                }
-            }
-            
-            console.log("Extracted result:", result);
-            console.log("Test passed:", result === testCase.output);
-        };
-        
-        testResponseHandling();
-    }, []);
+
 
     // Custom renderer for markdown content
     const renderMessageContent = (text, isBot) => {
